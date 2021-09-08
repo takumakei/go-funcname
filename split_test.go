@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/takumakei/go-funcname"
+	"github.com/takumakei/go-funcname/v2"
 )
 
 func ExampleSplit() {
@@ -13,6 +13,7 @@ func ExampleSplit() {
 		"net.Dial",
 		"net/http.ListenAndServe",
 		"net/http/httputil.DumpRequest",
+		"example/only",
 	} {
 		pkgname, name := funcname.Split(v)
 		fmt.Printf("%q,%q\n", pkgname, name)
@@ -22,6 +23,7 @@ func ExampleSplit() {
 	// "net","Dial"
 	// "net/http","ListenAndServe"
 	// "net/http/httputil","DumpRequest"
+	// "example/only",""
 }
 
 func TestSplit(t *testing.T) {

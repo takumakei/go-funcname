@@ -3,7 +3,9 @@ package funcname
 import "strings"
 
 // Split splits s into two strings by the first '.' after the last '/'.
-func Split(s string) (lhs, rhs string) {
+// In case of finding no '/', Split splits s by the first '.'.
+// In case of finding no '.', Split returns pkgname = s and name = "".
+func Split(s string) (pkgname, name string) {
 	i := strings.LastIndexByte(s, '/') + 1
 	j := strings.IndexByte(s[i:], '.') + 1
 	if j == 0 {
