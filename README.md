@@ -1,13 +1,13 @@
 funcname
 ======================================================================
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/takumakei/go-funcname/v2.svg)](https://pkg.go.dev/github.com/takumakei/go-funcname/v2)
+[![Go Reference](https://pkg.go.dev/badge/github.com/takumakei/go-funcname/v3.svg)](https://pkg.go.dev/github.com/takumakei/go-funcname/v3)
 
 Package funcname provides functions getting name and package name of a function.
 
 ```text
 $ go doc -all
-package funcname // import "github.com/takumakei/go-funcname/v2"
+package funcname // import "github.com/takumakei/go-funcname/v3"
 
 Package funcname provides functions getting name and package name of a function.
 

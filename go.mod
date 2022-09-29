@@ -1,3 +1,3 @@
-module github.com/takumakei/go-funcname/v2
+module github.com/takumakei/go-funcname/v3
 
 go 1.15

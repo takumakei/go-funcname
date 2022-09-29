@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/takumakei/go-funcname/v2"
+	"github.com/takumakei/go-funcname/v3"
 )
 
 func ExampleSplit() {

@@ -6,8 +6,8 @@ import (
 	"net/http/httputil"
 	"reflect"
 
-	"github.com/takumakei/go-funcname/v2"
-	"github.com/takumakei/go-funcname/v2/internal/test"
+	"github.com/takumakei/go-funcname/v3"
+	"github.com/takumakei/go-funcname/v3/internal/test"
 )
 
 func Example() {
@@ -24,7 +24,7 @@ func Example() {
 	// "net/http/httputil.DumpRequest"
 	// "net/http/httputil", "DumpRequest"
 	// "net/http/httputil", "DumpRequest"
-	// "github.com/takumakei/go-funcname/v2/internal/test", "SplitThis"
+	// "github.com/takumakei/go-funcname/v3/internal/test", "SplitThis"
 }
 
 func ExampleOf() {
@@ -45,28 +45,28 @@ func ExampleThis() {
 	name := test.This()
 	fmt.Printf("%q", name)
 	// Output:
-	// "github.com/takumakei/go-funcname/v2/internal/test.This"
+	// "github.com/takumakei/go-funcname/v3/internal/test.This"
 }
 
 func ExampleSplitThis() {
 	pkgname, name := test.SplitThis()
 	fmt.Printf("%q, %q", pkgname, name)
 	// Output:
-	// "github.com/takumakei/go-funcname/v2/internal/test", "SplitThis"
+	// "github.com/takumakei/go-funcname/v3/internal/test", "SplitThis"
 }
 
 func ExampleCaller() {
 	name := test.Caller(0)
 	fmt.Printf("%q", name)
 	// Output:
-	// "github.com/takumakei/go-funcname/v2/internal/test.Caller"
+	// "github.com/takumakei/go-funcname/v3/internal/test.Caller"
 }
 
 func ExampleSplitCaller() {
 	pkgname, name := test.SplitCaller(0)
 	fmt.Printf("%q, %q", pkgname, name)
 	// Output:
-	// "github.com/takumakei/go-funcname/v2/internal/test", "SplitCaller"
+	// "github.com/takumakei/go-funcname/v3/internal/test", "SplitCaller"
 }
 
 func ExampleForPC() {

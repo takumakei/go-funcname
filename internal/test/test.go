@@ -1,6 +1,6 @@
 package test
 
-import "github.com/takumakei/go-funcname/v2"
+import "github.com/takumakei/go-funcname/v3"
 
 func This() string {
 	return funcname.This()
